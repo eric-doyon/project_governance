@@ -1,12 +1,14 @@
 <template>
     <div class="home-page">
-        <menu-section/>
+        <header-menu/>
+        <nav-menu/>
         <h2>Home</h2>
     </div>
 </template>
 
 <script>
-import MenuSection from './menu/MenuSection.vue'
+import HeaderMenu from '@/components/menu/HeaderMenu.vue'
+import NavMenu from '@/components/menu/NavMenu.vue'
 export default {
   name: 'Home',
   data () {
@@ -18,7 +20,8 @@ export default {
 
   },
   components:{
-      'menu-section': MenuSection
+      'header-menu': HeaderMenu,
+      'nav-menu': NavMenu
   }
 }
 </script>
