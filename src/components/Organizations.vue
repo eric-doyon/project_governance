@@ -1,24 +1,27 @@
 <template>
-    <div class="org-page">
-        <menu-section/>
+    <div class="organizations-page">
+        <header-menu/>
+        <nav-menu/>
         <h2>Organizations</h2>
     </div>
 </template>
 
 <script>
-import MenuSection from './menu/MenuSection.vue'
+import HeaderMenu from '@/components/menu/HeaderMenu.vue'
+import NavMenu from '@/components/menu/NavMenu.vue'
 export default {
-  name: 'Organization',
+  name: 'Organizations',
   data () {
     return {
       msg: ''
     }
   },
-  props:{
+  props: {
 
   },
-  components:{
-      'menu-section': MenuSection
+  components: {
+    'header-menu': HeaderMenu,
+    'nav-menu': NavMenu
   }
 }
 </script>

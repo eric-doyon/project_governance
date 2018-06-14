@@ -16,12 +16,12 @@ export default {
       msg: ''
     }
   },
-  props:{
+  props: {
 
   },
-  components:{
-      'header-menu': HeaderMenu,
-      'nav-menu': NavMenu
+  components: {
+    'header-menu': HeaderMenu,
+    'nav-menu': NavMenu
   }
 }
 </script>

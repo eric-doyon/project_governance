@@ -13,10 +13,10 @@ export default {
       msg: ''
     }
   },
-  props:{
+  props: {
 
   },
-  components:{
+  components: {
 
   }
 }
