@@ -1,7 +1,5 @@
 <template>
     <div class="organizations-page">
-        <header-menu/>
-        <nav-menu/>
         <h2>Organizations</h2>
     </div>
 </template>

@@ -1,0 +1,24 @@
+.fade-enter-active, .fade-leave-active {
+    transition: opacity 0.25s ease-out;
+}
+
+.fade-enter, .fade-leave-to {
+    opacity: 0;
+}
+
+.expand-enter-active {
+    transition: transform .25s ease-out;
+    transform-origin:left;
+    transform: scaleX(1);
+}
+/* .expand-enter defines the starting state for entering */
+/* .expand-leave defines the ending state for leaving */
+.expand-leave-active {
+    transition: transform .25s ease-in;
+    transform-origin:left;
+    transform: scaleX(0);
+}
+
+.expand-leave, .expand-enter{
+    transform: scaleX(0);
+}
