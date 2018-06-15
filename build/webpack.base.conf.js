@@ -35,7 +35,7 @@ module.exports = {
     extensions: ['.js', '.vue', '.json'],
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
-      '@': resolve('src'),
+      '@': resolve('src')
     }
   },
   module: {
@@ -49,6 +49,10 @@ module.exports = {
       {
         test: /\.s[a|c]ss$/,
         loader: 'sass-loader'
+      },
+      {
+        test: /\.css$/,
+        loader: 'css-loader'
       },
       {
         test: /\.js$/,

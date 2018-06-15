@@ -1,14 +1,6 @@
 <template>
-    <transition name="expand">
-        <div class="nav-menu" v-show="show">
-            <ul>
-                <li>
-                    <router-link :to="{ name: 'Home' }">Home</router-link>
-                </li>
-                <li>
-                    <router-link to="/org">Organizations</router-link>
-                </li>
-            </ul>
+    <transition name="fade">
+        <div class="settings-menu" v-show="show">
         </div>
     </transition>
 </template>
@@ -42,16 +34,22 @@ export default {
 <style lang="scss" scoped>
     @import '@/assets/css/main.scss';
     @import '@/assets/css/transitions.scss';
-    .nav-menu{
+    .settings-menu{
         position: fixed;
         width: 200px;
         height: 100%;
-        top: $header-height;
-        left:0;
-        background-color: $nav-menu-bg-color;
+        top: $header-height+1;
+        right:0;
+        background-color: $settings-menu-bg-color;
+        color: $settings-menu-font-color;
+        font-size: $settings-menu-font-size;
+        border: $master-border;
+        border-radius: $master-border-radius;
+    }
+    .expand-enter-active{
+        transform-origin: right !important;
     }
     .expand-leave-active{
-        transform-origin: top !important;
-        transform: scaleY(0) !important;
+        transform-origin: right !important;
     }
 </style>

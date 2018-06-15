@@ -1,25 +1,46 @@
+/*imports*/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/*CSS MASTER VARS*/
+$master-theme-color: #17a173;
+$master-neutral-color: #f4f4f4;
+$master-font-color: #303030;
+$master-font-color-alt: #303030;
+$master-font-family: 'Roboto', sans-serif;
+$master-font-size-small: 14px;
+$master-font-size-medium: 18px;
+$master-font-size-large: 22px;
+$master-border: 1px solid #303030;
+$master-border-radius: 1px;
+
+
 /*CSS VARS FOR APP BODY*/
-$body-bg-color: #d8d3ce;
-$body-font-family: impact;
-$body-font-size: 18px;
-$body-font-color: #000;
+$body-bg-color: $master-neutral-color;
+$body-font-family: $master-font-family;
+$body-font-size: $master-font-size-small;
+$body-font-color: $master-font-color;
 
 /*CSS VARS FOR APP HEADER*/
-$header-bg-color: rgb(173, 174, 180);
-$header-font-family: impact;
-$header-font-size: 18px;
-$header-font-color: #000;
+$header-bg-color: $master-theme-color;
+$header-font-family: $master-font-family;
+$header-font-size: $master-font-size-medium;
+$header-font-color: $master-font-color-alt;
 $header-height:45px;
 
 /*CSS VARS FOR APP NAV MENU*/
-$nav-menu-bg-color: #000;
-$nav-menu-font-family: impact;
-$nav-menu-font-size: 18px;
-$nav-menu-font-color: #000;
+$nav-menu-bg-color: $master-theme-color;
+$nav-menu-font-family: $master-font-family;
+$nav-menu-font-size: $master-font-size-medium;
+$nav-menu-font-color: $master-font-color-alt;
 
 
 /*CSS VARS FOR APP SETTINGS MENU*/
-$settings-menu-bg-color: #000;
-$settings-menu-font-family: impact;
-$settings-menu-font-size: 18px;
-$settings-menu-font-color: #000;
+$settings-menu-bg-color: $master-theme-color;
+$settings-menu-font-family: $master-font-family;
+$settings-menu-font-size: $master-font-size-medium;
+$settings-menu-font-color: $master-font-color-alt;
+
+/*CSS VARS FOR SPACING*/
+$small-space: 4px;
+$medium-space: 8px;
+$large-space: 12px;

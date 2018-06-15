@@ -5,8 +5,6 @@
 </template>
 
 <script>
-import HeaderMenu from '@/components/menu/HeaderMenu.vue'
-import NavMenu from '@/components/menu/NavMenu.vue'
 export default {
   name: 'Organizations',
   data () {
@@ -18,8 +16,6 @@ export default {
 
   },
   components: {
-    'header-menu': HeaderMenu,
-    'nav-menu': NavMenu
   }
 }
 </script>
