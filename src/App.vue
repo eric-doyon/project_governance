@@ -10,10 +10,10 @@
 </template>
 
 <script>
-import HeaderMenu from '@/components/menu/HeaderMenu.vue'
+import HeaderMenu from '@/components/menus/HeaderMenu.vue'
 import BaseRollover from '@/components/rollovers/BaseRollover.vue'
-import NavMenu from '@/components/menu/NavMenu.vue'
-import SettingsMenu from '@/components/menu/SettingsMenu.vue'
+import NavMenu from '@/components/menus/NavMenu.vue'
+import SettingsMenu from '@/components/menus/SettingsMenu.vue'
 export default {
   name: 'App',
   data () {

@@ -1,26 +1,40 @@
 <template>
     <div class="home-page">
       <h2>Home</h2>
+      <p>{{ COUNT }}</p>
+      <p>
+        <button @click="increment">+</button>
+        <button @click="decrement">-</button>
+      </p>
     </div>
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 export default {
   name: 'Home',
-  data () {
-    return {
-      msg: ''
+  computed: {
+    ...mapGetters([
+      'COUNT'
+    ])
+  },  
+  methods: {
+    loadData () {
+      this.$store.commit('loadCount')
+    },
+    increment () {
+      this.$store.commit('increment')
+    },
+    decrement () {
+    	this.$store.commit('decrement')
     }
   },
-  props: {
-
-  },
-  components: {
+  beforeMount() {
+    this.loadData()
   }
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
 </style>
