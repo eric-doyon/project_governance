@@ -19,6 +19,9 @@ $body-bg-color: $master-neutral-color;
 $body-font-family: $master-font-family;
 $body-font-size: $master-font-size-small;
 $body-font-color: $master-font-color;
+body{
+    background-color: $body_bg_color;
+}
 
 /*CSS VARS FOR APP HEADER*/
 $header-bg-color: $master-theme-color;
@@ -28,6 +31,7 @@ $header-font-color: $master-font-color-alt;
 $header-height:45px;
 
 /*CSS VARS FOR APP NAV MENU*/
+$nav-width: 12vw;
 $nav-menu-bg-color: $master-theme-color;
 $nav-menu-font-family: $master-font-family;
 $nav-menu-font-size: $master-font-size-medium;

@@ -42,7 +42,7 @@ export default {
     @import '@/assets/css/transitions.scss';
     .base-rollover{
         position: fixed;
-        width: 200px;
+        width: $nav-width;
         height: 100%;
         top: $header-height+1;
         left:0;

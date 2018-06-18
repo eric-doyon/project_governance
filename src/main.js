@@ -4,6 +4,7 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 import App from './App'
 import router from './router'
+import VueResource from 'vue-resource'
 import { store } from './vuex/store.js'
 
 import fontawesome from '@fortawesome/fontawesome'
@@ -16,6 +17,7 @@ fontawesome.library.add(brands, faSpinner, faBars, faCog)
 
 Vue.config.productionTip = false
 Vue.use(Vuex)
+Vue.use(VueResource)
 
 /* eslint-disable no-new */
 new Vue({
