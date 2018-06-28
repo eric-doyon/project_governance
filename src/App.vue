@@ -29,6 +29,9 @@ export default {
   computed: {
     ...mapGetters(['IS_NAV_EXPANDED', 'IS_SETTINGS_EXPANDED'])
   },
+  beforeMount: function () {
+    document.body.style.backgroundColor = "#2e3e4e";
+  },
   methods: {
     toggleNav () {
       this.$store.commit('toggleNav')
@@ -50,16 +53,18 @@ export default {
     @import '@/assets/css/main.scss';
     #app {
       font-family: $body_font_family;
+      font-weight: 100;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       text-align: center;
-      color: $body_font_color;      
+      color: $body_font_color;
+      background-color: $body_bg_color;
       margin-top: $header_height;
       position: fixed;
       top: 0px;
       width: 98vw;
       left: 0px;
-      height: auto;
+      height: 99vh-$header-height;
       padding:10px !important;
     }
 

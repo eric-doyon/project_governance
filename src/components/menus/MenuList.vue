@@ -55,9 +55,10 @@ export default {
     a{
         text-decoration: none !important;
         color: $master-font-color;
+        opacity: 0.6;
     }
 
     a:hover{
-        text-decoration: underline !important;
+        opacity: 1;
     }
 </style>

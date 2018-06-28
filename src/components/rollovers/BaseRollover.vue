@@ -43,14 +43,15 @@ export default {
     .base-rollover{
         position: fixed;
         width: $nav-width;
+        min-width: 150px;
         height: 100%;
-        top: $header-height+1;
+        top: $header-height;
         left:0;
         background-color: $settings-menu-bg-color;
         color: $settings-menu-font-color;
         font-size: $settings-menu-font-size;
-        border: $master-border;
-        border-radius: $master-border-radius;
+        // border: $master-border;
+        // border-radius: $master-border-radius;
     }
     .right{
         right:0 !important;

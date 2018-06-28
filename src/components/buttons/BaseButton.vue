@@ -38,10 +38,12 @@ export default {
         border-radius: $master-border-radius;
         background-color: $master-neutral-color;
         color: $master-font-color;
+        opacity: 0.6;
     }
     .base-button:hover{
         cursor:pointer;
-        color: adjust-color($color: $body_font_color, $lightness: -10%)              
+        color: adjust-color($color: $body_font_color, $lightness: -10%);          
+        opacity: 1;
     }
     .theme{        
         transition: background-color 0.5 ease-out;
@@ -59,6 +61,7 @@ export default {
         color: $body_font_color;
     }
     .icon-only:hover{
-        color: adjust-color($color: $body_font_color, $lightness: -10%)
+        color: adjust-color($color: $body_font_color, $lightness: -10%);
+        opacity: 1;
     }
 </style>

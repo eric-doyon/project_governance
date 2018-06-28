@@ -51,8 +51,8 @@ export default {
         height:$header-height;
         background-color: $header-bg-color;
         color: $header-font-color;
-        border: $master-border;
-        border-radius: $master-border-radius;
+        // border: $master-border;
+        // border-radius: $master-border-radius;
     }
     .menu-button{
         margin-right: auto;
