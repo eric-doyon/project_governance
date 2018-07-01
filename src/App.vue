@@ -64,22 +64,22 @@ export default {
       top: 0px;
       width: 98vw;
       left: 0px;
-      height: 99vh-$header-height;
+      height: 97vh-$header-height;
       padding:10px !important;
     }
 
-    #app.trim-both{
+    .trim-both{
       left: $nav-width !important;
       right: $nav-width !important;
       width: 98vw-($nav-width*2) !important;
     }
 
-    #app.trim-left{
+    .trim-left{
       left: $nav-width !important;
       width: 98vw-$nav-width !important;
     }
 
-    #app.trim-right{
+    .trim-right{
       right: $nav-width !important;
       width: 98vw-$nav-width !important;
     }

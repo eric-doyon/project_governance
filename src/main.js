@@ -12,8 +12,9 @@ import brands from '@fortawesome/fontawesome-free-brands'
 import faSpinner from '@fortawesome/fontawesome-free-solid/faSpinner'
 import faBars from '@fortawesome/fontawesome-free-solid/faBars'
 import faCog from '@fortawesome/fontawesome-free-solid/faCog'
+import faArrowsAltV from '@fortawesome/fontawesome-free-solid/faArrowsAltV'
 
-fontawesome.library.add(brands, faSpinner, faBars, faCog)
+fontawesome.library.add(brands, faSpinner, faBars, faCog, faArrowsAltV)
 
 Vue.config.productionTip = false
 Vue.use(Vuex)
